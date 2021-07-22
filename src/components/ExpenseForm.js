@@ -16,6 +16,7 @@ export default class ExpenseForm extends React.Component {
             createdAt: props.expense ? moment(props.expense.createdAt) : moment(),
             calendarFocused: false,
             error: '',
+            action: props.expense ? 'edit' : 'new',
         };
     }
 
@@ -108,7 +109,7 @@ export default class ExpenseForm extends React.Component {
                         value={this.state.note}
                         onChange={this.onNoteChange}
                     />
-                    <button>Add Expense</button>
+                    <button>{this.state.action === 'new' ? 'Add Expense' : 'Edit Expense'}</button>
                 </form>
             </div>
         );
