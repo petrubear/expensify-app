@@ -42,9 +42,11 @@ export default class ExpenseForm extends React.Component {
         }
     };
     onDateChange = (createdAt) => {
-        this.setState(() => ({
-            createdAt: createdAt,
-        }));
+        if (createdAt) {
+            this.setState(() => ({
+                createdAt: createdAt,
+            }));
+        }
     };
     onFocusedChange = ({focused}) => {
         this.setState(() => ({
