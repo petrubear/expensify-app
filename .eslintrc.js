@@ -28,5 +28,7 @@ module.exports = {
         'indent': ['error', 4],
         'max-len': ['error', {'code': 120}],
         'no-invalid-this': ['off'],
+        'react/prop-types': ['off'],
+        'require-jsdoc': ['off'],
     },
 };
