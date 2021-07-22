@@ -1,4 +1,3 @@
-/* eslint-disable require-jsdoc */
 import React from 'react';
 import moment from 'moment';
 import {SingleDatePicker} from 'react-dates';
@@ -14,6 +13,7 @@ export default class ExpenseForm extends React.Component {
         amount: '',
         createdAt: moment(),
         calendarFocused: false,
+        error: '',
     };
     onDescriptionChange = (e) => {
         const description = e.target.value;
@@ -53,11 +53,30 @@ export default class ExpenseForm extends React.Component {
             calendarFocused: focused,
         }));
     };
+    onSubmit = (e) => {
+        e.preventDefault();
+        if (!this.state.description || !this.state.amount) {
+            this.setState(() => ({
+                error: 'Please provide description & amount',
+            }));
+        } else {
+            this.setState(() => ({
+                error: '',
+            }));
+            this.props.onSubmit({
+                description: this.state.description,
+                amount: parseFloat(this.state.amount) * 100,
+                createdAt: this.state.createdAt.valueOf(),
+                note: this.state.note,
+            });
+        }
+    };
 
     render() {
         return (
             <div>
-                <form>
+                {this.state.error !== '' && <p>{this.state.error}</p>}
+                <form onSubmit={this.onSubmit}>
                     <input
                         type="text"
                         placeholder="Description"
