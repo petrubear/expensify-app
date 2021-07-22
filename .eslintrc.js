@@ -9,6 +9,7 @@ module.exports = {
         'plugin:react/recommended',
         'google',
     ],
+    'parser': '@babel/eslint-parser',
     'parserOptions': {
         'ecmaVersion': 12,
         'sourceType': 'module',
@@ -26,5 +27,6 @@ module.exports = {
     'rules': {
         'indent': ['error', 4],
         'max-len': ['error', {'code': 120}],
+        'no-invalid-this': ['off'],
     },
 };
