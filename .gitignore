@@ -2,3 +2,4 @@
 /yarn-error.log
 /public/scripts/
 /public/bundle.js
+/src/tests/components/__snapshots__/
