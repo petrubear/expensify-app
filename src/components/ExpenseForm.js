@@ -1,7 +1,8 @@
 import React from 'react';
 import moment from 'moment';
 import {SingleDatePicker} from 'react-dates';
-import 'react-dates/lib/css/_datepicker.css';
+// muevo este import a app.js para facilitar las pruebas
+// import 'react-dates/lib/css/_datepicker.css';
 
 // const now = moment();
 // console.log(now.format('MMM Do, YYYY'));
