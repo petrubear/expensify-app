@@ -10,7 +10,8 @@
     "live-server": "live-server public",
     "build-watch": "webpack --watch",
     "build": "webpack",
-    "dev-server": "webpack serve"
+    "dev-server": "webpack serve",
+    "test": "jest"
   },
   "dependencies": {
     "@babel/cli": "^7.14.8",
@@ -22,6 +23,7 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "css-loader": "0.28.4",
+    "jest": "^27.0.6",
     "live-server": "^1.2.1",
     "moment": "2.18.1",
     "node-sass": "^6.0.1",
