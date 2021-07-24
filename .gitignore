@@ -3,3 +3,5 @@
 /public/scripts/
 /public/bundle.js
 /src/tests/components/__snapshots__/
+/public/bundle.js.map
+/public/bundle.js.LICENSE.txt
