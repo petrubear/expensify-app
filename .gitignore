@@ -1,8 +1,8 @@
 /node_modules/
-/yarn-error.log
-/public/scripts/
-/public/bundle.js
 /src/tests/components/__snapshots__/
+/yarn-error.log
+/public/scripts/app.js
+/public/bundle.js
 /public/bundle.js.map
 /public/bundle.js.LICENSE.txt
 /public/styles.css
