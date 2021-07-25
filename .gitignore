@@ -2,8 +2,4 @@
 /src/tests/components/__snapshots__/
 /yarn-error.log
 /public/scripts/app.js
-/public/bundle.js
-/public/bundle.js.map
-/public/bundle.js.LICENSE.txt
-/public/styles.css
-/public/styles.css.map
+/public/dist/
