@@ -17,7 +17,7 @@ module.exports = (env) => {
     console.log(`isProduction: ${isProduction}`);
     return {
         mode: isProduction ? 'production' : 'development',
-        entry: './src/app.js',
+        entry: ['@babel/polyfill', './src/app.js'],
         // entry: './src/playground/hoc.js',
         output: {
             path: path.join(__dirname, 'public', 'dist'),
