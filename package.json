@@ -29,10 +29,10 @@
     "css-loader": "0.28.4",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "firebase": "4.2.0",
+    "firebase": "^8.8.1",
     "history": "4.7.2",
     "mini-css-extract-plugin": "^2.1.0",
-    "moment": "2.18.1",
+    "moment": "^2.29.1",
     "node-sass": "^6.0.1",
     "normalize.css": "^8.0.1",
     "numeraljs": "^1.5.6",
@@ -63,7 +63,7 @@
     "eslint-plugin-react": "^7.24.0",
     "jest": "^27.0.6",
     "live-server": "^1.2.1",
-    "react-test-renderer": "16.0.0",
+    "react-test-renderer": "^17.0.2",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   }
